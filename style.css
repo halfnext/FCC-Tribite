@@ -1,26 +1,43 @@
+html {
+    height: 100%;
+}
 body { 
-    background-color: #D2B48C; 
+    display: flex;
+    flex-direction: column;
+    background-image: url("gachi-gachimuchi.gif");
+    background-size: cover;
     text-align: center; 
     margin-left: auto; 
-    margin-right: auto; 
+    margin-right: auto;
+    height: 99%;
   } 
   #main { 
-    display: flex; 
+    display: flex;
+    flex: 1 0 auto; 
     flex-direction: column; 
+    justify-content: center;
     align-items: center; 
-    padding: 30px; 
+    background-color: rgba(210, 180, 140, 0.5); 
   } 
   img { 
     max-width: 100%; 
     display: block; 
+    background: #196da5;
+    padding: 10px;
   } 
-  #img-div { 
-    background: #FFD700; 
-    padding: 10px; 
+  #img-div {  
+    color: #fbff02e8; 
+    font-style : italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #000;
   } 
   footer { 
+    display: flex;
+    flex: 0 0 auto;
     flex-direction: column; 
-    align-items: center; 
+    justify-content: flex-end; 
     color: gray; 
-    border-block: solid; 
+    align-self: center;
+    border-block: solid;
+    width: 100%; 
   }
