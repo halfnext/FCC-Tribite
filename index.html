@@ -3,7 +3,7 @@
 
 <head>
     <title>FCC: Tribute Page</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Billy2.png">
 </head>
 
@@ -14,6 +14,31 @@
         <div id="img-div">
             <img id="image" src="https://www.myinstants.com/media/instants_images/gachiiphy.gif" alt="Billy The King">
             <div id="img-caption">King is here</div>
+            <!-- <audio controls autoplay muted id="music">
+                <source src="billy_sound.mp3" type="audio/mpeg">
+            </audio> -->
+            <audio id="music">
+                <source src="billy_sound.mp3" type="audio/mpeg">                
+                </audio>
+                <button onclick="play()" type="button" id="bttn">Play</button>
+                <!-- <button onclick="pause()" type="button">Pause</button> -->
+            <script>
+                var myMusic = document.getElementById("music");
+                let stat;
+                function play() {
+                    myMusic.play();
+                    let myBttn = document.getElementById("bttn");
+                    if (stat === true) {
+                        myMusic.pause();
+                        stat = false;
+                        myBttn.textContent = 'Play';
+                        return;
+                    } else {
+                        myBttn.textContent = 'Pause';
+                        stat = true;
+                    }
+                }
+            </script>
         </div>
         <div id="tribute-info">
             <h3>Videography</h3>
