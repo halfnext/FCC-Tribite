@@ -1,5 +1,7 @@
 html {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 body { 
     display: flex;
@@ -7,9 +9,9 @@ body {
     background-image: url("gachi-gachimuchi.gif");
     background-size: cover;
     text-align: center; 
-    margin-left: auto; 
-    margin-right: auto;
-    height: 99%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
   } 
   #main { 
     display: flex;
